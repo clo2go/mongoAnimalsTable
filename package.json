@@ -1,0 +1,31 @@
+{
+  "name": "mongo-animal-table",
+  "version": "1.0.0",
+  "description": "table, mongoDB, Node, express, mongoose",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/clo2go/mongoAnimalsTable.git"
+  },
+  "keywords": [
+    "table",
+    "mongoDB",
+    "Node",
+    "express",
+    "mongoose"
+  ],
+  "author": "Carlos Lopez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/clo2go/mongoAnimalsTable/issues"
+  },
+  "homepage": "https://github.com/clo2go/mongoAnimalsTable#readme",
+  "dependencies": {
+    "express": "^4.14.0",
+    "mongojs": "^2.4.0"
+  }
+}

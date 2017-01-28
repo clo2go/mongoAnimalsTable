@@ -1,16 +1,7 @@
-/* MongoDB Zoo Site (18.2.4)
- * Back-end
- * ========================= */
-
-// Students: Your work is in the front-end.
-// Run this server file with node/nodemon, then open public/app.js.
-
-// Get cracking and good luck!
-
-
 // Dependencies
 var express = require("express");
 var mongojs = require("mongojs");
+var PORT = process.env.PORT || 3000;
 
 // Initialize Express
 var app = express();
@@ -85,7 +76,7 @@ app.get("/weight", function(req, res) {
   });
 });
 
-// Set the app to listen on port 3000
-app.listen(3000, function() {
-  console.log("App running on port 3000!");
+// Set the app to listen on environment port.
+app.listen(PORT, function() {
+  console.log("This app is creepin' on port :" + PORT);
 });
