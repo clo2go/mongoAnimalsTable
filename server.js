@@ -1,6 +1,7 @@
 // Dependencies
 var express = require("express");
 var mongojs = require("mongojs");
+var mongodb = require('mongodb');
 var PORT = process.env.PORT || 3000;
 
 // Initialize Express
@@ -13,7 +14,14 @@ app.use(express.static("public"));
 // Save the URL of our database as well as the name of our collection
 var databaseUrl = "zoo";
 var collections = ["animals"];
+//###########################  MLAB
+// Standard URI format: mongodb://[dbuser:dbpassword@]host:port/dbname
+// var uri = 'mongodb://heroku_fklggdbp:e3uh33qgds7ifd9ibe12to2msl@ds135689.mlab.com:35689/heroku_fklggdbp';
 
+// mongodb.MongoClient.connect(uri, function(err, db) {
+  
+//   if(err) throw err;
+//###########################MLAB
 // Use mongojs to hook the database to the db variable
 var db = mongojs(databaseUrl, collections);
 
